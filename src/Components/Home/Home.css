@@ -1,0 +1,280 @@
+.container{
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+.connect_wallet_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+.connect_wallet_box p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: rgb(216, 226, 235);
+}
+.connect_wallet_box a{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border: 3px solid rgb(27, 27, 27);
+    padding: 18px 32px;
+    border-radius: 10px;
+}
+.wallet_ballance_box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* right: 50px; */
+    
+    
+}
+.wallet_ballance{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: flex-end;
+    margin-left: 30px;
+    /* align-items: center; */
+}
+.wallet_ballance p{
+    font-size: 18px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.input_box{
+    display: flex;
+}
+.input_box input{
+    border: 2px solid black;
+    border-right: 0px solid black;
+    padding: 11px 60px;
+}
+.input_box input::placeholder{
+    font-size: 16px;
+    text-align: center;
+}
+.input_box button{
+    background-color: #F6AE90;
+    border: 0px solid red;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+
+/* Stake More  */
+.staked_more{
+    width: 30%;
+    /* justify-content: flex-end; */
+    margin-left: 20px;
+
+}
+
+.staked_more .staked_more_btn{
+    cursor: pointer;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    /* text-shadow: 1px 0px 5px 1px rgb(209, 209, 209); */
+    background-color: #7AB655;
+    border: none;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+.withdraw_claim{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.withdraw_claim button{
+    cursor: pointer;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F57E2F;
+    width: 200px;
+    padding: 10px 0px;
+    color: #fff;
+    border: 0px solid rgb(195, 195, 35);
+    border-radius: 10px;
+}
+
+/* Reward Per Day */
+.reward_per_day{
+    width: 30%;
+    margin-left: 60px;
+}
+.reward_per_day button{
+    cursor: pointer;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #5B9BD5;
+    /* width: 200px; */
+    padding: 30px 10px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+/* Add Item */
+
+.add_item{
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #5B9BD5;
+    /* width: 200px; */
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #000;
+    /* border-radius: 10px; */
+    margin-right: 60px;
+}
+
+.item_box{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    padding: 15px 0px;
+}
+.item{
+    width: 29%;
+    border:1px solid #000;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #9DADDA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+.item p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.item_button button{
+    cursor: pointer;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #B0D2A1;
+    /* width: 200px; */
+    padding: 10px 15px;
+    color: #000;
+    border: 0px solid #000;
+    border-radius: 5px;
+}
+@media (max-width: 1300px) {
+    .input_box input{
+        padding: 11px 40px;
+    }
+    .staked_more .staked_more_btn{
+        padding: 30px 45px;
+    }
+    .wallet_ballance{
+        width: 50%;
+    }
+    .staked_more{
+        width: 40%;
+    }
+    .reward_per_day{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .item{
+        width: 28%;
+    }
+}
+@media (max-width: 786px) {
+    .wallet_ballance_box{
+        flex-direction: column;
+    }
+    .wallet_ballance{
+        width: 80%;
+    }
+    .staked_more{
+        width: 80%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .reward_per_day{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .item_box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{
+        width: 80%;
+    }
+}
+@media (max-width: 426px) {
+    .wallet_ballance{
+        width: 80%;
+    }
+    .wallet_ballance p{
+        font-size: 14px;
+    }
+    .staked_more{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .reward_per_day{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .input_box input{
+        padding: 10px 0px;
+    }
+    .input_box input::placeholder{
+        padding: 0px 0px;
+    }
+    .item{
+        width: 90%;
+    }
+    .staked_more .staked_more_btn{
+        font-size: 18px;
+    }
+    .withdraw_claim button{
+        font-size: 18px;
+    }
+    .connect_wallet_box p{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .connect_wallet_box a{
+        font-size: 14px;
+        padding: 10px 5px;
+        border: 1px solid;
+        text-align: center;
+    }
+}
