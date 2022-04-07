@@ -196,17 +196,33 @@
         width: 50%;
     }
     .staked_more{
-        width: 40%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .reward_per_day{
         width: 100%;
-        margin-left: 20px;
+        display: flex; 
+        /* justify-content: center; */
+        margin-left: 21px;
     }
     .item{
         width: 28%;
     }
 }
-@media (max-width: 786px) {
+@media (max-width: 1024px) {
+    .staked_more .staked_more_btn{
+        font-size: 18px;
+    }
+    .withdraw_claim button{
+        font-size: 18px;
+    }
+    .reward_per_day button{
+        font-size: 18px;
+    }
+}
+@media (max-width: 985px) {
     .wallet_ballance_box{
         flex-direction: column;
     }

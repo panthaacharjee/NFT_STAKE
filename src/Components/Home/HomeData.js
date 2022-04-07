@@ -33,5 +33,12 @@ export const HomeData = [
         passed : 1,
         claimed : 0,
         reward : 1000
+    },
+    {
+        tokens : 100000,
+        staketime : "2022/3/31",
+        passed : 1,
+        claimed : 0,
+        reward : 1000
     }
 ]
