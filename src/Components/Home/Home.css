@@ -364,6 +364,13 @@
         width: 80%;
     }
 }
+@media (max-width: 470px) {
+    .add_item_input input{
+        width: 200px;
+        height: 30px;
+    
+    }
+}
 @media (max-width: 426px) {
     .wallet_ballance{
         width: 80%;
