@@ -17,7 +17,7 @@
     font-weight: 300;
     color: rgb(216, 226, 235);
 }
-.connect_wallet_box a{
+.connect_wallet_box .connect_wallet{
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 300;
@@ -25,6 +25,13 @@
     border: 3px solid rgb(27, 27, 27);
     padding: 18px 32px;
     border-radius: 10px;
+    cursor: pointer;
+}
+.connect_wallet:hover{
+    background-color: rgb(231, 229, 229);
+}
+.connect_wallet:active{
+    background-color: rgb(202, 198, 198);
 }
 .wallet_ballance_box{
     display: flex;
@@ -71,7 +78,22 @@
     font-weight: 400;
 }
 
-
+.input_box button:hover{
+    background-color:#fca580 ;
+}
+.input_box button:active{
+    font-size: 14px;
+    background-color: #f7753e;
+}
+.half{  
+    background : #FFD78C!important;
+}
+.half:hover{
+    background-color: #fdcb70 !important;
+}
+.half:active{
+    background-color: #f9c25b !important;
+}
 /* Stake More  */
 .staked_more{
     width: 30%;
@@ -93,6 +115,12 @@
     padding: 30px 50px;
     border-radius: 15px;
 }
+.staked_more .staked_more_btn:hover{
+    background-color: #67b933;
+}
+.staked_more .staked_more_btn:active{
+    background-color: #48a90c;
+}
 .withdraw_claim{
     display: flex;
     flex-direction: column;
@@ -112,7 +140,22 @@
     border: 0px solid rgb(195, 195, 35);
     border-radius: 10px;
 }
-
+.withdraw_claim button:hover{
+    background-color: #f97015;
+}
+.withdraw_claim button:active{
+    background-color: #c6560b;
+}
+.claim{
+    background : #FFC601 !important;
+    margin-top: 20px;
+}
+.claim:hover{
+    background-color: #f4c20c !important;
+}
+.claim:active{
+    background-color: #af8e15 !important;
+}
 /* Reward Per Day */
 .reward_per_day{
     width: 30%;
@@ -131,6 +174,12 @@
     border: 1px solid #000;
     border-radius: 10px;
 }
+.reward_per_day button:hover{
+    background-color: #388ad6;
+}
+.reward_per_day button:active{
+    background-color: #0d6bc3!important;
+}
 
 /* Add Item */
 
@@ -147,6 +196,54 @@
     border: 1px solid #000;
     /* border-radius: 10px; */
     margin-right: 60px;
+}
+.add_item_input{
+    display:flex;
+    justify-content:center;
+    margin-top: 30px;
+    /* width: 80%; */
+
+}
+.add_item form {
+    /* width: 3000; */
+}
+.add_item_input label{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.add_item_input input{
+    width: 400px;
+    height: 30px;
+    border: 2px solid black;
+    padding: 5px 8px;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+.add_item_none{
+    display: none;
+}
+.add_item_input button{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #af8e15;
+    border: none;
+    border-radius:5px ;
+    margin-top: 10px;
+}
+
+.add_item_input button:hover{
+    background-color: #deb10e;
+}
+.add_item_input button:active{
+    background-color: #ab8808;
 }
 
 .item_box{
@@ -184,6 +281,21 @@
     color: #000;
     border: 0px solid #000;
     border-radius: 5px;
+}
+.item_button button:hover{
+    background-color: #90d772;
+}
+.item_button button:active{
+    background-color: #4ebc1f;
+}
+.item_withdraw{
+    background-color: rgb(246, 182, 155) !important;
+}
+.item_withdraw:hover{
+    background-color: rgb(239, 145, 104) !important;
+}
+.item_withdraw:active{
+    background-color: rgb(212, 72, 12)!important;
 }
 @media (max-width: 1300px) {
     .input_box input{

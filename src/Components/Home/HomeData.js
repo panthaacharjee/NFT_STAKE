@@ -1,4 +1,4 @@
-export const HomeData = [
+const HomeData = [
     {
         tokens : 350,
         staketime : "2022/2/31",
@@ -42,3 +42,4 @@ export const HomeData = [
         reward : 1000
     }
 ]
+export default HomeData
